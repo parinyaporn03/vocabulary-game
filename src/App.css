@@ -1,3 +1,81 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5em;
+  height: 4em;
+  border: none;
+  cursor: default;
+  border-radius: 0.8em;
+  background: rgba(235, 252, 254, 0.8);
+}
+
+.active_line {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 2em;
+  height: 0.4em;
+  background-color: #999;
+  border: none;
+  border-radius: 1em;
+  transition: all 0.15s linear;
+}
+
+.button:focus .container {
+  animation: wow 1s forwards;
+}
+
+@keyframes wow {
+  20% {
+    scale: 0.8;
+  }
+
+  30% {
+    scale: 1;
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  65% {
+    transform: translateY(4px);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.text {
+  content: "";
+  position: absolute;
+  top: -2.5em;
+  width: 4em;
+  height: 2em;
+  background-color: #666;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+
+.button:hover .text {
+  opacity: 1;
+}
+
 :root {
   background-color: rgb(25, 25, 48);
 }
