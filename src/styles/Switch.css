@@ -1,0 +1,29 @@
+:where(.css-dev-only-do-not-override-1x0dypw).ant-switch.ant-switch-checked {
+  background: #2aaa2a;
+}
+
+:where(
+    .css-dev-only-do-not-override-1x0dypw
+  ).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: #2aaa2a;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-switch {
+  background: #ce5360;
+}
+:where(.css-dev-only-do-not-override-1x0dypw).ant-switch:hover:not(
+    .ant-switch-disabled
+  ) {
+  background: #ce5360;
+}
+:where(.css-dev-only-do-not-override-1x0dypw).ant-switch.ant-switch-checked
+  .ant-switch-inner {
+  padding-inline-start: 7px;
+}
+:where(.css-dev-only-do-not-override-1x0dypw).ant-switch
+  .ant-switch-handle::before {
+  content: "";
+}
+:where(.css-dev-only-do-not-override-1x0dypw).ant-switch .ant-switch-inner {
+  padding-inline-end: 7px;
+}
